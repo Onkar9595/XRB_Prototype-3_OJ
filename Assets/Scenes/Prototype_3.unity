@@ -1198,12 +1198,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3e57292dc2991b34287048041cd56efa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _winningSprite: {fileID: 0}
-  _loosingSprite: {fileID: 0}
-  _winningMaterial1: {fileID: 0}
-  _winningMaterial2: {fileID: 0}
-  _selectedImage: {fileID: 0}
-  _selectedButton: {fileID: 0}
+  _winningSprite: {fileID: 21300000, guid: 7ead1947dc2704f459692248eba12ddf, type: 3}
+  _loosingSprite: {fileID: 21300000, guid: e33e0a03b20992740af8750f71dcc078, type: 3}
+  _winningMaterial1: {fileID: 2100000, guid: f83c512585745334d97b6ad1bc0476f1, type: 2}
+  _winningMaterial2: {fileID: 2100000, guid: 21044b0505dd565478d45a61c23759f1, type: 2}
+  _selectedImage: {fileID: 1451972418}
+  _selectedButton: {fileID: 1081736035}
 --- !u!1001 &566007039
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2067,12 +2067,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3e57292dc2991b34287048041cd56efa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _winningSprite: {fileID: 0}
-  _loosingSprite: {fileID: 0}
-  _winningMaterial1: {fileID: 0}
-  _winningMaterial2: {fileID: 0}
-  _selectedImage: {fileID: 0}
-  _selectedButton: {fileID: 0}
+  _winningSprite: {fileID: 21300000, guid: 7ead1947dc2704f459692248eba12ddf, type: 3}
+  _loosingSprite: {fileID: 21300000, guid: e33e0a03b20992740af8750f71dcc078, type: 3}
+  _winningMaterial1: {fileID: 2100000, guid: f83c512585745334d97b6ad1bc0476f1, type: 2}
+  _winningMaterial2: {fileID: 2100000, guid: 21044b0505dd565478d45a61c23759f1, type: 2}
+  _selectedImage: {fileID: 762692071}
+  _selectedButton: {fileID: 423633755}
 --- !u!1 &1081736033
 GameObject:
   m_ObjectHideFlags: 0
@@ -2339,12 +2339,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3e57292dc2991b34287048041cd56efa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _winningSprite: {fileID: 0}
-  _loosingSprite: {fileID: 0}
-  _winningMaterial1: {fileID: 0}
-  _winningMaterial2: {fileID: 0}
-  _selectedImage: {fileID: 0}
-  _selectedButton: {fileID: 0}
+  _winningSprite: {fileID: 21300000, guid: 7ead1947dc2704f459692248eba12ddf, type: 3}
+  _loosingSprite: {fileID: 21300000, guid: e33e0a03b20992740af8750f71dcc078, type: 3}
+  _winningMaterial1: {fileID: 2100000, guid: f83c512585745334d97b6ad1bc0476f1, type: 2}
+  _winningMaterial2: {fileID: 2100000, guid: 21044b0505dd565478d45a61c23759f1, type: 2}
+  _selectedImage: {fileID: 2038890362}
+  _selectedButton: {fileID: 769080708}
 --- !u!1001 &1375751127
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2763,12 +2763,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3e57292dc2991b34287048041cd56efa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _winningSprite: {fileID: 0}
-  _loosingSprite: {fileID: 0}
-  _winningMaterial1: {fileID: 0}
-  _winningMaterial2: {fileID: 0}
-  _selectedImage: {fileID: 0}
-  _selectedButton: {fileID: 0}
+  _winningSprite: {fileID: 21300000, guid: 7ead1947dc2704f459692248eba12ddf, type: 3}
+  _loosingSprite: {fileID: 21300000, guid: e33e0a03b20992740af8750f71dcc078, type: 3}
+  _winningMaterial1: {fileID: 2100000, guid: f83c512585745334d97b6ad1bc0476f1, type: 2}
+  _winningMaterial2: {fileID: 2100000, guid: 21044b0505dd565478d45a61c23759f1, type: 2}
+  _selectedImage: {fileID: 172965987}
+  _selectedButton: {fileID: 1627269519}
 --- !u!1001 &1607982700
 PrefabInstance:
   m_ObjectHideFlags: 0
