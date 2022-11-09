@@ -11,7 +11,7 @@ public class PlayQuestionAudio : MonoBehaviour
     {
         _audioSource = GetComponent<AudioSource>();
     }
-
+    
     public void PlaySound()
     {
         _audioSource.Play();

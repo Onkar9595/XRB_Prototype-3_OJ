@@ -7,21 +7,22 @@ using UnityEngine.UI;
 
 public class SelectionLogic : MonoBehaviour
 {
-    [SerializeField] private Sprite _winningSprite;
-    [SerializeField] private Sprite _loosingSprite;
+    [SerializeField] public Sprite _winningSprite;
+    [SerializeField] public Sprite _loosingSprite;
 
-    [SerializeField] private Material _winningMaterial1;
-    [SerializeField] private Material _winningMaterial2;
-
+    [SerializeField] public Material _winningMaterial1;
+    [SerializeField] public Material _winningMaterial2;
+    
     [SerializeField] private Image _selectedImage;
     [SerializeField] private Button _selectedButton;
-    public bool correctAnswer1Selected;
-    public bool correctAnswer2Selected;
+    //public bool correctAnswer1Selected;
+    //public bool correctAnswer2Selected;
+    [SerializeField] private ParticleSystem _celebrationParticle;
 
     public void Start()
     {
-        correctAnswer1Selected = false;
-        correctAnswer2Selected = false;
+        //correctAnswer1Selected = false;
+        //correctAnswer2Selected = false;
     }
 
     public void WinningCondition()
@@ -34,8 +35,8 @@ public class SelectionLogic : MonoBehaviour
         {
             _selectedButton.image.sprite = _loosingSprite;
         }
-
-        if (_selectedImage.material == _winningMaterial1)
+        
+      /*  if (_selectedImage.material == _winningMaterial1)
         {
             correctAnswer1Selected = true;
         }
@@ -44,7 +45,13 @@ public class SelectionLogic : MonoBehaviour
         {
             correctAnswer2Selected = true;
         }
-        
+        */
+       
     }
+
+   // public void ContextComplete()
+   // {
+       
+   // }
     
 }

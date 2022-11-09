@@ -1797,6 +1797,7 @@ GameObject:
   - component: {fileID: 436799882}
   - component: {fileID: 436799881}
   - component: {fileID: 436799880}
+  - component: {fileID: 436799879}
   m_Layer: 5
   m_Name: QuestionCanvas
   m_TagString: Untagged
@@ -1825,6 +1826,27 @@ RectTransform:
   m_AnchoredPosition: {x: 333.07, y: 361.16}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &436799879
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 436799877}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bf33ddefb6dadd44ab91532b710cd1af, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _winningSprite: {fileID: 0}
+  _loosingSprite: {fileID: 0}
+  _winningMaterial1: {fileID: 0}
+  _winningMaterial2: {fileID: 0}
+  _selectedImage: {fileID: 0}
+  _selectedButton: {fileID: 0}
+  _celebrationParticle: {fileID: 0}
+  _selectedButton1: {fileID: 0}
+  _selectedButton2: {fileID: 0}
 --- !u!114 &436799880
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2954,7 +2976,7 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: -4015948216816737901, guid: 7e0437c66c3c8814d993a1793c163760, type: 2}
   m_audioClip: {fileID: 8300000, guid: b8dea16241d7b204c837b0b7f3a3c28b, type: 3}
-  m_PlayOnAwake: 1
+  m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
   Loop: 0
@@ -4884,7 +4906,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1141312638922007800, guid: e157d92dbe0df3149bd6601aa8873a34, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 330.69
+      value: 333.162
       objectReference: {fileID: 0}
     - target: {fileID: 1141312638922007800, guid: e157d92dbe0df3149bd6601aa8873a34, type: 3}
       propertyPath: m_LocalPosition.y
