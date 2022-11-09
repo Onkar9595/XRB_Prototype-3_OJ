@@ -789,7 +789,6 @@ GameObject:
   - component: {fileID: 219405676}
   - component: {fileID: 219405675}
   - component: {fileID: 219405674}
-  - component: {fileID: 219405673}
   m_Layer: 5
   m_Name: Button
   m_TagString: Untagged
@@ -816,24 +815,6 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &219405673
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 219405671}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3e57292dc2991b34287048041cd56efa, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _winningSprite: {fileID: 0}
-  _loosingSprite: {fileID: 0}
-  _winningMaterial1: {fileID: 0}
-  _winningMaterial2: {fileID: 0}
-  _selectedImage: {fileID: 0}
-  _selectedButton: {fileID: 0}
 --- !u!114 &219405674
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -877,19 +858,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 219405675}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: OptionManager, Assembly-CSharp
-        m_MethodName: WinningCondition
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
 --- !u!114 &219405675
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1838,15 +1807,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bf33ddefb6dadd44ab91532b710cd1af, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _winningSprite: {fileID: 0}
-  _loosingSprite: {fileID: 0}
-  _winningMaterial1: {fileID: 0}
+  _winningSprite: {fileID: 21300000, guid: 75bc4937d5c01ea4db2cdcfda977d36b, type: 3}
+  _loosingSprite: {fileID: 21300000, guid: 2b925e8345aabce46b8e0fb0fe4a1dd8, type: 3}
+  _winningMaterial1: {fileID: 2100000, guid: f83c512585745334d97b6ad1bc0476f1, type: 2}
   _winningMaterial2: {fileID: 0}
   _selectedImage: {fileID: 0}
   _selectedButton: {fileID: 0}
   _celebrationParticle: {fileID: 0}
-  _selectedButton1: {fileID: 0}
-  _selectedButton2: {fileID: 0}
+  _selectedButton1: {fileID: 1081736035}
+  _selectedButton2: {fileID: 769080708}
 --- !u!114 &436799880
 MonoBehaviour:
   m_ObjectHideFlags: 0
