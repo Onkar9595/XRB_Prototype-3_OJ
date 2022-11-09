@@ -261,7 +261,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-65062
+  m_Name: pb_Mesh-1280
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -557,7 +557,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-54560
+  m_Name: pb_Mesh-1260
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -1008,7 +1008,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 423633756}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1030275843}
+        m_TargetAssemblyTypeName: OptionManager, Assembly-CSharp
+        m_MethodName: WinningCondition
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &423633756
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1065,6 +1077,7 @@ GameObject:
   - component: {fileID: 452635731}
   - component: {fileID: 452635730}
   - component: {fileID: 452635729}
+  - component: {fileID: 452635734}
   m_Layer: 5
   m_Name: MangoCanvas
   m_TagString: Untagged
@@ -1173,6 +1186,24 @@ RectTransform:
   m_AnchoredPosition: {x: 330.8565, y: 358.90012}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &452635734
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 452635728}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3e57292dc2991b34287048041cd56efa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _winningSprite: {fileID: 0}
+  _loosingSprite: {fileID: 0}
+  _winningMaterial1: {fileID: 0}
+  _winningMaterial2: {fileID: 0}
+  _selectedImage: {fileID: 0}
+  _selectedButton: {fileID: 0}
 --- !u!1001 &566007039
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1461,7 +1492,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-55328
+  m_Name: pb_Mesh-1348
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -1631,6 +1662,7 @@ GameObject:
   - component: {fileID: 769080710}
   - component: {fileID: 769080709}
   - component: {fileID: 769080708}
+  - component: {fileID: 769080711}
   m_Layer: 5
   m_Name: Button
   m_TagString: Untagged
@@ -1700,7 +1732,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 769080709}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1224245622}
+        m_TargetAssemblyTypeName: OptionManager, Assembly-CSharp
+        m_MethodName: WinningCondition
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &769080709
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1739,6 +1783,24 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 769080706}
   m_CullTransparentMesh: 1
+--- !u!114 &769080711
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 769080706}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3e57292dc2991b34287048041cd56efa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _winningSprite: {fileID: 0}
+  _loosingSprite: {fileID: 0}
+  _winningMaterial1: {fileID: 0}
+  _winningMaterial2: {fileID: 0}
+  _selectedImage: {fileID: 0}
+  _selectedButton: {fileID: 0}
 --- !u!1001 &859884653
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1884,6 +1946,7 @@ GameObject:
   - component: {fileID: 1030275840}
   - component: {fileID: 1030275839}
   - component: {fileID: 1030275838}
+  - component: {fileID: 1030275843}
   m_Layer: 5
   m_Name: OrangeCanvas (1)
   m_TagString: Untagged
@@ -1992,6 +2055,24 @@ RectTransform:
   m_AnchoredPosition: {x: 332.02695, y: 358.90012}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1030275843
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1030275837}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3e57292dc2991b34287048041cd56efa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _winningSprite: {fileID: 0}
+  _loosingSprite: {fileID: 0}
+  _winningMaterial1: {fileID: 0}
+  _winningMaterial2: {fileID: 0}
+  _selectedImage: {fileID: 0}
+  _selectedButton: {fileID: 0}
 --- !u!1 &1081736033
 GameObject:
   m_ObjectHideFlags: 0
@@ -2073,7 +2154,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1081736036}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 452635734}
+        m_TargetAssemblyTypeName: OptionManager, Assembly-CSharp
+        m_MethodName: WinningCondition
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1081736036
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2125,6 +2218,7 @@ GameObject:
   - component: {fileID: 1224245619}
   - component: {fileID: 1224245618}
   - component: {fileID: 1224245617}
+  - component: {fileID: 1224245622}
   m_Layer: 5
   m_Name: KnifenCanvas (3)
   m_TagString: Untagged
@@ -2233,6 +2327,24 @@ RectTransform:
   m_AnchoredPosition: {x: 333.194, y: 358.90012}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1224245622
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1224245616}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3e57292dc2991b34287048041cd56efa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _winningSprite: {fileID: 0}
+  _loosingSprite: {fileID: 0}
+  _winningMaterial1: {fileID: 0}
+  _winningMaterial2: {fileID: 0}
+  _selectedImage: {fileID: 0}
+  _selectedButton: {fileID: 0}
 --- !u!1001 &1375751127
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2530,6 +2642,7 @@ GameObject:
   - component: {fileID: 1591319630}
   - component: {fileID: 1591319629}
   - component: {fileID: 1591319628}
+  - component: {fileID: 1591319633}
   m_Layer: 5
   m_Name: WatermelonCanvas (2)
   m_TagString: Untagged
@@ -2638,6 +2751,24 @@ RectTransform:
   m_AnchoredPosition: {x: 329.711, y: 358.90012}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1591319633
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1591319627}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3e57292dc2991b34287048041cd56efa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _winningSprite: {fileID: 0}
+  _loosingSprite: {fileID: 0}
+  _winningMaterial1: {fileID: 0}
+  _winningMaterial2: {fileID: 0}
+  _selectedImage: {fileID: 0}
+  _selectedButton: {fileID: 0}
 --- !u!1001 &1607982700
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2784,7 +2915,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1627269520}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1591319633}
+        m_TargetAssemblyTypeName: OptionManager, Assembly-CSharp
+        m_MethodName: WinningCondition
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1627269520
 MonoBehaviour:
   m_ObjectHideFlags: 0
