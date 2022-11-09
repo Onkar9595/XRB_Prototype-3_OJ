@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -14,8 +15,15 @@ public class SelectionLogic : MonoBehaviour
 
     [SerializeField] private Image _selectedImage;
     [SerializeField] private Button _selectedButton;
-    
-    
+    public bool correctAnswer1Selected;
+    public bool correctAnswer2Selected;
+
+    public void Start()
+    {
+        correctAnswer1Selected = false;
+        correctAnswer2Selected = false;
+    }
+
     public void WinningCondition()
     {
         if (_selectedImage.material == _winningMaterial1 || _selectedImage.material == _winningMaterial2)
@@ -26,6 +34,17 @@ public class SelectionLogic : MonoBehaviour
         {
             _selectedButton.image.sprite = _loosingSprite;
         }
+
+        if (_selectedImage.material == _winningMaterial1)
+        {
+            correctAnswer1Selected = true;
+        }
+        
+        if (_selectedImage.material == _winningMaterial1)
+        {
+            correctAnswer2Selected = true;
+        }
+        
     }
     
 }
