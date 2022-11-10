@@ -35,12 +35,25 @@ public class ContextSelection : MonoBehaviour
     
     void Start()
     {
-        
+        option1.enabled = false;
+        option2.enabled = false;
+        option3.enabled = false;
+        option4.enabled = false;
+        option5.enabled = false;
+        option6.enabled = false;
+        welcomeCanvas.enabled = true;
+        sentenceCanvas.enabled = false;
+        context.enabled = true;
+        detail.enabled = true;
+        audio.enabled = false;
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+        if (option6.enabled)
+        {
+            Debug.Log("option 6 enabled");
+        }
     }
 }
