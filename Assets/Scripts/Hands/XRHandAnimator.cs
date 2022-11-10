@@ -1,5 +1,3 @@
-using System;
-using UI;
 using UnityEngine;
 using UnityEngine.InputSystem;
 using UnityEngine.XR.Interaction.Toolkit;
@@ -10,7 +8,6 @@ namespace Hands
     {
         [SerializeField] private ActionBasedController _controller;
         [SerializeField] private Animator _animator;
-        [SerializeField] private MenuManager _menuManager;
         
         private void Start()
         {
@@ -20,19 +17,10 @@ namespace Hands
             _controller.activateAction.action.started += Fist;
             _controller.activateAction.action.canceled += FistReleased;
         }
-
-        private void OnDestroy()
-        {
-            _controller.selectAction.action.started -= Point;
-            _controller.selectAction.action.canceled -= PointReleased;
-
-            _controller.activateAction.action.started -= Fist;
-            _controller.activateAction.action.canceled -= FistReleased;
-        }
-
+        
         private void Fist(InputAction.CallbackContext obj)
         {
-            if(!_menuManager.gameObject.activeSelf) _animator.SetBool("Fist", true);
+            _animator.SetBool("Fist", true);
         }
         private void FistReleased(InputAction.CallbackContext obj)
         {

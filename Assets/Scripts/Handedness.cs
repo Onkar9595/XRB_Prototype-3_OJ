@@ -16,7 +16,7 @@ public class Handedness : MonoBehaviour
     private void Start()
     {
         _gameManager = FindObjectOfType<GameEventManager>();
-        handed = _gameManager.handedness;
+        //handed = _gameManager.handedness;
         
         if (handed == Handed.Left)
         {

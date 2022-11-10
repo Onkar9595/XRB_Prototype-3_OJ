@@ -7,7 +7,7 @@ public class Bullet : MonoBehaviour
     {
         if (other.gameObject.TryGetComponent(out EnemyController _enemy))
         {
-            _enemy.SetStunned();
+            //_enemy.SetStunned();
             Destroy(gameObject);
         }
     }

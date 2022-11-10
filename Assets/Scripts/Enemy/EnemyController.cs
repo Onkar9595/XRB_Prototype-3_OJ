@@ -9,15 +9,13 @@ public class EnemyController : MonoBehaviour
     enum EnemyState
     {
         Patrol = 0,
-        Investigate = 1,
-        Stunned = 2
+        Investigate = 1
     }
     
     [SerializeField] private NavMeshAgent _agent;
     [SerializeField] private Animator _animator;
     [SerializeField] private float _threshold = 0.5f;
     [SerializeField] private float _waitTime = 2f;
-    [SerializeField] private float _stunnedTime = 3f;
     [SerializeField] private PatrolRoute _patrolRoute;
     [SerializeField] private FieldOfView _fov;
     [SerializeField] private EnemyState _state = EnemyState.Patrol;
@@ -25,7 +23,6 @@ public class EnemyController : MonoBehaviour
     public UnityEvent<Transform> onPlayerFound;
     public UnityEvent onInvestigate;
     public UnityEvent onReturnToPatrol;
-    public UnityEvent onStunned;
 
     private bool _moving = false;
     private Transform _currentPoint;
@@ -34,14 +31,11 @@ public class EnemyController : MonoBehaviour
     private Vector3 _investigationPoint;
     private float _waitTimer = 0f;
     private bool _playerFound = false;
-    private float _stunnedTimer = 0f;
     
     // Start is called before the first frame update
     void Start()
     {
         _currentPoint = _patrolRoute.route[_routeIndex];
-
-        GetComponentInChildren<SkinnedMeshRenderer>().enabled = false;
     }
 
     // Update is called once per frame
@@ -62,24 +56,6 @@ public class EnemyController : MonoBehaviour
         {
             UpdateInvestigate();
         }
-        else if (_state == EnemyState.Stunned)
-        {
-            _stunnedTimer += Time.deltaTime;
-            if (_stunnedTimer >= _stunnedTime)
-            {
-                ReturnToPatrol();
-                _animator.SetBool("Stunned", false);
-            }
-        }
-    }
-
-    public void SetStunned()
-    {
-        _animator.SetBool("Stunned", true);
-        _stunnedTimer = 0f;
-        _state = EnemyState.Stunned;
-        _agent.SetDestination(transform.position);
-        onStunned.Invoke();
     }
 
     public void InvestigatePoint(Vector3 investigatePoint)

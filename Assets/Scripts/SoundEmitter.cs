@@ -6,12 +6,12 @@ using UnityEngine.Events;
 
 [RequireComponent(typeof(AudioSource))]
 public class SoundEmitter : MonoBehaviour
-{   
+{
     [SerializeField] private float _soundRadius = 5f;
     [SerializeField] private float _impulseThreshold = 2f;
 
     public UnityEvent onEmitSound;
-    
+
     private float _collsionTimer = 0f;
     
     private AudioSource _audioSource;

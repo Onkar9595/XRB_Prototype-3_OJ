@@ -15,19 +15,32 @@ public class TaskComplete : SelectionLogic
     [SerializeField] private Canvas washing;
     
     [SerializeField] private Canvas contextDone;
-    [SerializeField] private Canvas lightmango;
-    [SerializeField] private Canvas lightknife;
+    [SerializeField] private Light lightmango;
+    [SerializeField] private Light lightknife;
 
-    public void Start()
+    [SerializeField] private Canvas hint;
+    [SerializeField] private Canvas audio;
+    [SerializeField] private Canvas questionCanvas;
+
+    [SerializeField] private Canvas _context;
+    [SerializeField] private Canvas _detail;
+    private AudioSource _applause;
+
+    
+
+    public new void Start()
     {
         contextDone.enabled = false;
         lightknife.enabled = false;
         lightmango.enabled = false;
+        _applause = GetComponent<AudioSource>();
+
     }
     public void Update()
     {
         if (_selectedButton1.image.sprite == _winningSprite && _selectedButton2.image.sprite == _winningSprite)
         {
+            _applause.enabled = true;
             contextDone.enabled = true;
             lightknife.enabled = true;
             lightmango.enabled = true;
@@ -36,6 +49,11 @@ public class TaskComplete : SelectionLogic
             orange.enabled = false;
             washing.enabled = false;
             Debug.Log("You won");
+            hint.enabled = false;
+            audio.enabled = false;
+            questionCanvas.enabled = false;
+            _context.enabled = true;
+            _detail.enabled = true;
         }
     }
 

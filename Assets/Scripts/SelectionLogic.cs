@@ -17,7 +17,7 @@ public class SelectionLogic : MonoBehaviour
     [SerializeField] private Button _selectedButton;
     //public bool correctAnswer1Selected;
     //public bool correctAnswer2Selected;
-    [SerializeField] private ParticleSystem _celebrationParticle;
+  
 
     public void Start()
     {
