@@ -16,7 +16,7 @@ public class ContextSelection : MonoBehaviour
     [SerializeField] private Canvas option4;
     [SerializeField] private Canvas option5;
     [SerializeField] private Canvas option6;
-
+    [SerializeField] private Canvas hintHighlight;
     private AudioSource _contextbuttonAudio;
     // Start is called before the first frame update
 
@@ -34,6 +34,7 @@ public class ContextSelection : MonoBehaviour
         detail.enabled = false;
         audio.enabled = true;
         _contextbuttonAudio.Play();
+        hintHighlight.enabled = true;
     }
     
     void Start()
@@ -50,6 +51,7 @@ public class ContextSelection : MonoBehaviour
         detail.enabled = true;
         audio.enabled = false;
         _contextbuttonAudio = GetComponent<AudioSource>();
+        hintHighlight.enabled = false;
     }
 
     // Update is called once per frame

@@ -21,7 +21,6 @@ public class OptionManager : MonoBehaviour
         if (_selectedImage.material == _winningMaterial1 || _selectedImage.material == _winningMaterial2)
         {
             _selectedButton.image.sprite = _winningSprite;
-            
         }
         else
         {
