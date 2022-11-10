@@ -6734,7 +6734,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _controller: {fileID: 1141312638378019754}
   _animator: {fileID: 5163315845605802499}
-  _menuManager: {fileID: 1675843248}
 --- !u!114 &1141312638378019755
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7559,7 +7558,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _controller: {fileID: 1141312639435350274}
   _animator: {fileID: 8719455921461138778}
-  _menuManager: {fileID: 1675843248}
 --- !u!114 &1141312639435350276
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7711,8 +7709,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8f89768010c40cf45a97f5ff9f26fa50, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _leftHandTransform: {fileID: 5076307663434322958}
-  _rightHandTransform: {fileID: 8706822013424780119}
   _rotationReference: {fileID: 8706822013424780119}
 --- !u!114 &1608270106
 MonoBehaviour:
