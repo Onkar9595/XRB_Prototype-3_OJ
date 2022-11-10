@@ -16,6 +16,8 @@ public class ContextSelection : MonoBehaviour
     [SerializeField] private Canvas option4;
     [SerializeField] private Canvas option5;
     [SerializeField] private Canvas option6;
+
+    private AudioSource _contextbuttonAudio;
     // Start is called before the first frame update
 
     public void StartContextRoutine()
@@ -31,6 +33,7 @@ public class ContextSelection : MonoBehaviour
         context.enabled = false;
         detail.enabled = false;
         audio.enabled = true;
+        _contextbuttonAudio.Play();
     }
     
     void Start()
@@ -46,14 +49,9 @@ public class ContextSelection : MonoBehaviour
         context.enabled = true;
         detail.enabled = true;
         audio.enabled = false;
+        _contextbuttonAudio = GetComponent<AudioSource>();
     }
 
     // Update is called once per frame
-    void Update()
-    {
-        if (option6.enabled)
-        {
-            Debug.Log("option 6 enabled");
-        }
-    }
+  
 }
